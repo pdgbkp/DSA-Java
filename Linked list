@@ -1,0 +1,29 @@
+class Main{
+    Node head;
+    static class Node{
+        int value;
+        Node next;
+        Node(int data){
+            value = data;
+            next = null;   
+        }
+    }
+    public static void main(String[] args){
+        Main linklist = new Main();
+        linklist.head = new Node(50);
+        Node second = new Node(60);
+        Node third = new Node(70);
+
+        // Join all the nodes
+        linklist.head.next = second;
+        second.next = third;
+
+        while(linklist.head != null){
+            System.out.print(linklist.head.value+"-->");
+            linklist.head = linklist.head.next;
+        }
+        System.out.println("null");
+
+
+    }
+}
