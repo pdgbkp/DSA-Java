@@ -1,0 +1,16 @@
+class Main{
+     int power(int n, int x){
+        int prod = 1;
+        for(int i = 1;i<=n;i++){
+            prod = prod*x;
+        
+        }
+        return prod;
+    }
+    public static void main(String[] args){
+        Main main = new Main();
+        int result = main.power(16,2);
+        System.out.println(result);
+
+    }
+}
