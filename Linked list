@@ -23,7 +23,5 @@ class Main{
             linklist.head = linklist.head.next;
         }
         System.out.println("null");
-
-
     }
 }
